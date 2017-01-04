@@ -1,10 +1,8 @@
-require_relative '../lib/letov'
-
-letov = Letov.new
+require 'letov'
 
 (1..100000).each do |x|
-	if letov.say == nil 
-		raise 'Нил найден' + x
+	if Letov.say == nil 
+		raise "Нил найден #{x}"
 	end
 end
 
