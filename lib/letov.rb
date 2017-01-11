@@ -6,6 +6,6 @@ module Letov
   def self.say
     song = rand(LYRICS.size)
     string = rand(LYRICS[song]['lyrics'].size)
-    LYRICS[song]['lyrics'][string] == nil ? self.say : LYRICS[song]['lyrics'][string]  
+    LYRICS[song]['lyrics'][string]
   end
 end
